@@ -2,7 +2,7 @@
 
 A real-time 2D physics sandbox written in **C** using **[raylib](https://www.raylib.com/)**. Click to spawn balls, then watch them fall, bounce off the walls and collide with each other. You can change gravity and bounciness while it runs.
 
-![Demo of the simulation](demo.gif)
+<!-- Demo GIF goes here: ![Demo of the simulation](demo.gif) -->
 
 > **Download:** a ready-to-run Windows build is on the [Releases](../../releases) page.
 
