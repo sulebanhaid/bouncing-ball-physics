@@ -2,9 +2,13 @@
 
 A real-time 2D physics sandbox written in **C** using **[raylib](https://www.raylib.com/)**. Click to spawn balls, then watch them fall, bounce off the walls and collide with each other. You can change gravity and bounciness while it runs.
 
-<!-- Demo GIF goes here: ![Demo of the simulation](demo.gif) -->
+![Balls being added and bouncing](docs/demo.gif)
 
-> **Download:** a ready-to-run Windows build is on the [Releases](../../releases) page.
+| Mid-bounce | Settled and paused (bounce lowered to 0.50) |
+|---|---|
+| ![Balls bouncing](docs/bouncing.png) | ![Balls settled with the simulation paused](docs/paused.png) |
+
+<sub>These images are rendered by running the game's own `main.c` and `ball.c` through a small headless renderer, so no display is needed (see [`tools/headless-render`](tools/headless-render)).</sub>
 
 ## Features
 
@@ -46,7 +50,9 @@ Each frame, every ball's velocity is updated by gravity and its position is upda
 .
 ├── main.c    # Window setup, main loop, input handling and on-screen interface
 ├── ball.c    # Ball storage, movement, drawing and collision logic
-└── ball.h    # Ball struct and public function declarations
+├── ball.h    # Ball struct and public function declarations
+├── docs/     # Demo GIF and screenshots
+└── tools/headless-render/  # Renders the screenshots from the real code without a GPU
 ```
 
 Ball data is kept private to `ball.c` (as `static` variables), and the rest of the program interacts with it only through the functions declared in `ball.h`.
