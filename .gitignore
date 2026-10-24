@@ -1,0 +1,10 @@
+# Build output
+*.exe
+*.o
+*.out
+game
+
+# Editor / OS files
+.vscode/
+.DS_Store
+Thumbs.db
